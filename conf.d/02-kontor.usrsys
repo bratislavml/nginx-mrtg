@@ -1,0 +1,16 @@
+cat <<EOF
+### User/System CPU usage
+Target[kontor.usrsys]: .1.3.6.1.4.1.2021.11.50.0&.1.3.6.1.4.1.2021.11.52.0:$COMM@$HOST
+RouterUptime[kontor.usrsys]: $TATGET
+MaxBytes[kontor.usrsys]: 100
+Unscaled[kontor.usrsys]: ymwd
+Options[kontor.usrsys]: growright,nopercent
+YLegend[kontor.usrsys]: CPU Utilization
+ShortLegend[kontor.usrsys]: %
+Legend1[kontor.usrsys]: User CPU in % (Load)
+Legend2[kontor.usrsys]: System CPU in % (Load)
+LegendI[kontor.usrsys]: User
+LegendO[kontor.usrsys]: System
+Title[kontor.usrsys]: CPU Load
+PageTop[kontor.usrsys]: <h1>CPU (user/system) -- $NAME</h1>
+EOF

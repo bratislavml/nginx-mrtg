@@ -1,0 +1,1 @@
+/usr/bin/cfgmaker --ifref=name --global "WorkDir: $WORKDIR" --global "Options[_]: growright,bits" "$COMM@$HOST"

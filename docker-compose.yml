@@ -1,0 +1,13 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - "./conf.d:/etc/mrtg/conf.d:ro"
+      - "./html:/usr/share/nginx/html"
+    environment:
+      - "TZ=Asia/Tokyo"
+    tmpfs:
+      - "/run"

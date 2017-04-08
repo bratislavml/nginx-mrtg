@@ -1,0 +1,16 @@
+cat <<EOF
+### Load Average
+Target[load]: .1.3.6.1.4.1.2021.10.1.5.1&.1.3.6.1.4.1.2021.10.1.5.2:$COMM@$HOST
+MaxBytes[load]: 100
+Options[load]: growright,gauge,absolute,nopercent,noinfo,
+YLegend[load]: Load Average
+YTicsFactor[load]: 0.01
+Factor[load]: 0.01
+ShortLegend[load]: pt.
+LegendI[load]: 1min avg
+LegendO[load]: 5min avg
+Legend1[load]: 1min avg
+Legend2[load]: 5min avg
+Title[load]: Load Average
+PageTop[load]: <h1>Load Average -- $NAME</h1>
+EOF
